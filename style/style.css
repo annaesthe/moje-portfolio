@@ -4,15 +4,10 @@ body {
     background-color: #383A40;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #fff;
+    color: #291f1a;
+    margin: 0;
 }
 
-/* Header */
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
 
 /* Navigation */
 
@@ -22,7 +17,6 @@ h1 {
     background-color: #fff;
     right: 0;
     top: 0;
-    
 }
 
 #navtop > ul {
@@ -38,7 +32,7 @@ h1 {
 
 #navtop > ul > li > a {
     text-decoration: none;
-    color: greenyellow;
+    color: #1ac056;
     font-weight: 500;
 }
 
@@ -46,11 +40,36 @@ h1 {
     color: #291f1a;
 }
 
+/* Header */
+
 #main-header {
-    width: 100%;
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    height: 100%;
 }
 
-h1 h2 {
+#main-header .main-header-content {
+    padding: 30vh;
     text-align: center;
-    font-size: 20%;
+}
+
+#main-header .main-header-content > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+#main-header .main-header-content > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+/* Span style */
+
+span {
+    color: #1ac056;
+    font-weight: 700;
 }
