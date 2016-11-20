@@ -3,30 +3,54 @@
 body {
     background-color: #383A40;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
     color: #fff;
-    width: 100%;
 }
 
 /* Header */
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /* Navigation */
 
-#main {
+#navtop {
     position: fixed;
+    width: 100%;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    
+}
+
+#navtop > ul {
+    margin: 0;
+    float: right;
+}
+
+#navtop > ul > li {
+    list-style-type: none;
+    padding: 20px 40px;
     display: inline-block;
 }
 
-ul li {
-    color: #F0484F;
-    float: right;
-    margin-left: 30px;
+#navtop > ul > li > a {
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: 500;
 }
 
-a {
-    text-decoration: none;
-    color: #F0484F;
+#navtop > ul > li > a:hover {
+    color: #291f1a;
+}
+
+#main-header {
+    width: 100%;
+}
+
+h1 h2 {
+    text-align: center;
+    font-size: 20%;
 }
