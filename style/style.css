@@ -28,6 +28,7 @@ section#about {
 
 h2 {
     font-size: 40px;
+    text-align: center;
 }
 
 p {
@@ -65,6 +66,11 @@ p {
 #navtop > ul > li > a:hover {
     color: #291f1a;
 }
+
+#navtop .toggle, #drop {
+    display: none;
+}
+
 
 /* Header */
 
@@ -145,19 +151,149 @@ div#skills-icons figure img {
     margin-top: 15px;
 }
 
-/* SECTION SKILLS */
+/* SECTION PORTOFLIO */
 
-footer#contact {
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio4.jpg);
+}
+
+section#portfolio {
+    padding: 0 80px 100px;
+}
+
+#portfolio .portfolio-items {
+    width: 100%;
+    font-size: 0px;
+}
+
+#portfolio .portfolio-items .single-portfolio-item {
+    width: 33.3333%;
+    height: 350px;
+    display: inline-block;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask {
+    background: rgba(33,59,80,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    font-size: 14px;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-border {
+    border: 1px solid #fff;
+    height: 330px;
+    margin: 10px;
+    position: relative;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-border .single-portfolio-item-content {
+    font-size: inital;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* SECTION PORTOFLIO
+
+
+section#portfolio {
+    padding: 0 80px 100px;
+}
+
+div.portfolio-all-items {
+    width: 100%;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+}
+
+div.portfolio-item {
+    width: 33.3333%;
+    height: 350px;
+    display: inline-block;
+    
+}
+
+#portfolio-single-item1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+
+#portfolio-single-item2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+
+#portfolio-single-item3 {
+    background-image: url(../img/portfolio4.jpg);
+}
+
+
+.portfolio-all-masks:hover  {
+    position: relative;
+	top: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: #213b50;
+	opacity:0.7;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
+
+.single-image-content {
+    font-size: 12px;
+    position: absolute;
     color: white;
-    font-family: 'Lato', sans-serif;
+}
+
+*/
+
+/* SECTION CONTACT */
+
+section#contact {
+    width: 100%;
+    margin: 0;
     background-color: #213b50;
     overflow: hidden;
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 div#contact-left {
     text-align: left; 
     float: left;
-    padding: 0 120px;
+    padding: 0 100px;
 }
 
 div#contact-left a {
@@ -167,58 +303,80 @@ div#contact-left a {
 
 div#contact-left p>a {
     color: white;
-    font-size: 30px;
-}
-
-div#contact-left p>a:hover {
+    font-size: 20px;
     color: #1ac056;
 }
 
-div#contact-left .social-icons a {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #fff;
-    display: inline-block;
-    line-height: 30px;
-    text-align: center;
-    color: #fff;
+div#contact-left p>a:hover {
+    color: white;
 }
 
-div#footer-form {
+
+div#contact-left .social-icons a {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #fff;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+
+div#contact-left .social-icons a:hover {
+    background-color: white;
+    color: #2A4B66;
+}
+
+/* SECTION FOOTER FORM */
+
+div#email-form {
     float: right;
     padding: 40px 120px;
 }
 
-div#footer-form input#name, #email {
+div#email-form input#name, #email {
     background-color: #2A4B66;
     color: #f9fcfe;
     border: none;
     width: 100%;
 }
 
-div#footer-form textarea {
+div#email-form textarea {
     background-color: #2A4B66;
     color: #f9fcfe;
     border: none;
     width: 100%;
 }
-div#footer-form input#send {
+
+div#email-form input#send {
     background-color: #1ac056;
     float: right;
-    width: 70px;
+    width: 100px;
     border: none;
-    padding: 5px 5px;
+    padding: 10px 10px;
     color: #f9fcfe;
-    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
 }
 
-div#copy {
-    background-color:  #2A4B66;  
+div#email-form input#send:hover {
+    color: #162736;
+}
+
+/* SECTION COPYRIGHT */
+
+footer#copy {
+    width: 100%;
+    background-color:  #162736;
     overflow: hidden;
     margin: 0;
     text-align: left;
     color: white;
-    padding: 0 120px;
+    padding-left: 100px;
 }
 
 

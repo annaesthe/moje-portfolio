@@ -14,6 +14,9 @@
 <!-- Main styles -->
    
     <link rel="stylesheet" href="style/style.css">
+    
+<!-- Responsywne -->
+    <link rel="stylesheet" href="style/responsywne.css">
 
     
 </head>
@@ -22,6 +25,9 @@
 <!-- Navigation -->
   
    <nav id="navtop">
+       <label for="drop" class="toggle">Menu</label>
+       <input type="checkbox" id="drop" />
+       
     <ul>
       <li><a href="#about">o mnie</a></li>
       <li><a href="default.asp">umiejętności</a></li>
@@ -43,9 +49,9 @@
 <!-- Section about --> 
   <section id="about">
      <h2>O <span>mnie</span></h2> 
-      <figure>
+     <figure>
           <img src="img/jan-nowak.jpg" alt="my-photo" max-height=400px>
-      </figure>
+     </figure>
       
      <article>
          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium tellus eu ex feugiat suscipit. Aenean aliquet ipsum vehicula tincidunt tempus. Nulla venenatis dignissim diam, vel congue mauris eleifend eu. Proin lacinia, eros non mattis cursus, velit enim scelerisque odio, ut dignissim odio eros quis neque. Nunc vitae dui lacinia, tincidunt mi eu, ultricies lorem. Vivamus lobortis sem massa, quis facilisis ligula egestas eu. Etiam cursus risus quis ex aliquam condimentum. Pellentesque in commodo enim. Pellentesque vulputate massa egestas diam scelerisque luctus. Aenean risus leo, hendrerit sed ante a, finibus euismod odio. Vi
@@ -81,36 +87,113 @@
 
        </div>
    </section>
-   <footer id="contact">
+   
+<!--
+    Section PORTFOLIO  
+   
+   <section id="portfolio">
+       <h2>Moje <span>portfolio</span></h2> 
        
-    <div id="contact-left">
-        <h2>Anna <span>Sieradzka</span></h2>
-        <adress>Robotnicza 50 <br /> 38-500 Sanok</adress>
-        <p>tel: 509433217<br />e-mail:<a href="mailto:youremailaddress"> an.sieradzka@gmail.com</a></p>
-        <p>
-        <div class="social-icons">
+       <div class="portfolio-all-items">
+         
+          <div id="portfolio-single-item1" class="portfolio-item">
+              <div class="portfolio-all-masks">
+                   <div class="single-image-content">
+                   <h3>Lorem ipsum
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum corporis enim atque tempore iure tempora saepe repudiandae dolor sed.</p></div> 
+                   
+               </div>
+           </div>
+          <div id="portfolio-single-item2" class="portfolio-item"></div>
+          <div id="portfolio-single-item3" class="portfolio-item"></div>
+          
+        </div>
+       
+    </section>
+    
+-->
+   <section id="portfolio">
+    <h2>Moje <span>portfolio</span></h2> 
+    
+         <div class="portfolio-items">
+            
+             <div id="portfolio-item-1" class="single-portfolio-item">
+                 <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-border">
+                        <div class="single-portfolio-item-content">
+                            <h2>Tytuł portfolio</h2>
+                            <p>Opis portfolio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quisquam nemo recusandae placeat blanditiis nihil ex sequi, illo odit magni.</p>
+                            <h4>Technologie</h4>
+                            <p>JavaScript, jQuery, HTML5, CSS3</p>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             
+             <div id="portfolio-item-2" class="single-portfolio-item">
+                 <div class="single-portfolio-item-mask">
+                     <div class="single-portfolio-item-mask-border">
+                         <div class="single-portfolio-item-content">
+                             <h2>Tytuł portfolio</h2>
+                            <p>Opis portfolio</p>
+                            <h4>Technologie</h4>
+                            <p>JavaScript, jQuery, HTML5, CSS3</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            
+             <div id="portfolio-item-3" class="single-portfolio-item">
+                 <div class="single-portfolio-item-mask">
+                     <div class="single-portfolio-item-mask-border">
+                         <div class="single-portfolio-item-content">
+                            <h2>Tytuł portfolio</h2>
+                            <p>Opis portfolio.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4>Technologie</h4>
+                            <p>JavaScript, jQuery, HTML5, CSS3</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+             
+        </div>
+        
+    </section>
+    
+   <!-- Section Contact --> 
+   <section id="contact">
+       
+      <div id="contact-left">
+           <h2>Anna <span>Sieradzka</span></h2>
+           <adress>Robotnicza 50 <br /> 38-500 Sanok</adress>
+           <p>tel: 509433217<br />e-mail:<a href="mailto:an.sieradzka@gmail.com">  an.sieradzka@gmail.com</a></p>
+           
+         <div class="social-icons">
             <a href ="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href ="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
             <a href ="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href ="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
 
-    </div>   
+      </div>   
     
-     <div id="footer-form">
-           <form action="https://formspree.io/an.sieradzka@gmail.com"
+      <div id="email-form">
+             <form action="https://formspree.io/an.sieradzka@gmail.com"
       method="POST">
-          <input type="text" id="name" name="name" value="Imię i nazwisko"><br /><br />   
-          <input type="email" id="email" name="_replyto" value="Email"><br /><br />
-         <textarea name="message" id="message" rows="10" cols="50">treść wiadomości</textarea><br /><br />
-         <input type="submit" id="send" value="Wyślij">
+             <input type="text" id="name" name="name" value="Imię i nazwisko"><br /><br />  
+             <input type="email" id="email" name="_replyto" value="Email"><br /><br />
+             <textarea name="message" id="message" rows="10" cols="50">treść wiadomości</textarea><br /><br />
+             <input type="submit" id="send" value="Wyślij">
         </form> 
        
-        </div>
+      </div>
     
-   </footer>
-           <div id="copy">
+   </section>
+          
+   <!-- Section about --> 
+          
+           <footer id="copy">
             <p>Copyright @ Anna Sieradzka</p>
-        </div>
+        </footer>
 </body>
 </html>

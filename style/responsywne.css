@@ -1,40 +1,37 @@
 
+@media all and (max-width: 1290px) {
 
-#gallery {
-	width: 80%;
-
+    
 }
 
-figure {
-
-	width: 33%;
-}
-
-@media (min-width:992px) {
-
-    figure {
-
-        width: 33%;
+@media all and (max-width: 768px) {
+    #navtop .toggle {
+        display: block;
+        color: #1ac056;
+        padding: 0 20px;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    } 
+    
+    
+    #navtop ul {
+        display: none;
+        width: 100%;
+    } 
+    
+    #navtop #drop:checked + ul {
+        display: block;
     }
     
 }
 
-@media (min-width:768px) and (max-width:991px) {
-    figure {
+@media all and (max-width: 680px) {
 
-        width: 49%;
-    }
 }
 
-@media (min-width:480px) and (max-width:768px) {
-    figure {
-
-        width: 100%;
-    } 
-}
-
-@media (max-width:479px) {
-    #gallery {
-	    width: 100%;
-    }
+@media all and (max-width: 480px) {
+    
 }
